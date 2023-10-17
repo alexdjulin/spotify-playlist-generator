@@ -164,7 +164,7 @@ Songs Blacklist: {'Adore', "I Can't Make You Love Me"}
 ## Notes
 All my playlist names start with an underscore (_). It makes it easier for me to visualise them at the top and to differenciate the ones I created manually and the ones created from this tool. Feel free to remove it from the code, when defining _self.playlist_ in _main()_.
 ```python
-self.playlist = self.sp.user_playlist_create(self.current_user['id'], public=False, name=f'_{self.name}')
+p_name = f'_{self.name}'
 ```
 
 In interactive mode, I play the songs starting in the middle of the tracks, as it is often faster this way to evaluate a song and decide if it should be added or not. Feel free to change this and have the songs start at the beginning. To do this, change the contents of _start_position_ in _fill_playlist_interactive()_. start_position defaults to 0 if you don't specify it.
